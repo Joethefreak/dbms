@@ -14,6 +14,10 @@
             color: royalblue;
             text-decoration: none;
         }
+        div{
+            position: fixed;
+            top: 5em;
+        }
     </style>
 </head>
 <body>
@@ -21,6 +25,10 @@
     <a id="partb" href="./assets/partb.sql" download="partb.sql">PartB</a>
     <a id="partapdf" href="./assets/DBMSPARTA.pdf" download="dbmsA.pdf">PdfPartA</a>
     <a id="partbpdf" href="./assets/DBMSPARTB.pdf" download="dbmsB.pdf">PdfPartB</a>
+    <div>
+    <p>create a database</p>
+    <p>mysql -u username -p database_name < path_to_file.sql</p>
+    </div>
     <script>
         window.onload = () => {
             document.getElementById('parta').click();
